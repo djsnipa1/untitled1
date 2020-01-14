@@ -230,13 +230,4 @@ $RECYCLE.BIN/
 .idea/misc.xml
 .idea/modules.xml
 .idea/untitled1.iml
-Pipfile
-Pipfile.lock
-json.json
-output.txt
-song_link_2-json_tutorial.py
-song_link_2-jsonpath.py
-song_link_2.py
-source-data.json
-test.py
-usernames.json
+
