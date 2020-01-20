@@ -7,6 +7,8 @@ question_access = read_content['results']
 
 
 for question_data in question_access:
+  print("QUESTION_DATA:")
+  print("=============================")
   print(question_data)
 
 replies_access = question_data['replies']
@@ -36,3 +38,5 @@ get_user_names()
 
 with open('usernames.json', 'w') as file:
   json.dump(save_data, file)
+
+print(save_data)

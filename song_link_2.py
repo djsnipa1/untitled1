@@ -22,29 +22,23 @@ with open('json.json') as f:
 pretty = json.dumps(data, indent=2, sort_keys=True)
 
 # print(pretty)
-
+final_data = []
 # spotify = data['entitiesByUniqueId']
-entities = data['entitiesByUniqueId']
+# entities = data['entitiesByUniqueId'].values()
+entities = data['linksByPlatform']
 
-for services in entities:
-  print(services)
+# for services in entities:
+#   print(services)
+print(entities)
+for key in entities:
+  # entities[value]['apiProvider']
+  list_platforms = key
+  # print(entities[value]['apiProvider'])
+  # print(value)
+  # final_data.update(list_platforms)
+  print(list_platforms)
 
-artists = services['artistName']
 
-# for artists in services:
-#   print(artists)
-# for artists in services:
-#   print(artists)
+# print("Your API provider: " + final_data)
 
-
-
-print(type(services))
-# print(spotify)
-
-# for item in spotify:
-#   print(item)
-#   # for thing in item:
-#   #   print(thing)
-#
-# for thing in item:
-#   print(thing)
+links = data['linksByPlatform']
