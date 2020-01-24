@@ -61,6 +61,12 @@ print('yandex_url = ' + yandex_url)
 print('itunes_url = ' + itunes_url)
 print('amazonstore_url - ' + amazonstore_url)
 
+print(str(spotify_url))
+
+test = str('Test ' + spotify_url)
+
+print('Format Test {}'.format(str(spotify_url)))
+# print('{}'format(str(spotify_url)))
 # print("Your API provider: " + final_data)
 
 links = data['linksByPlatform']
